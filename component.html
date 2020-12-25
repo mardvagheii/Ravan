@@ -1,0 +1,32 @@
+<div class="row align-items-center">
+    <div class="col-md-1">
+        <label>مهارت ها</label>
+
+    </div>
+    <div class="col-md-6 text-right">
+        <a class="btn text-white  btn-sm my-3 btn-success addItemOptions">افزودن</a>
+        <a class="btn btn-sm  text-white removeItemOptions btn-danger">حذف</a>
+    </div>
+    <div class="col-12">
+        <div class="row options">
+            <div class="col-md-3">
+                <input class="form-control my-3 " type="text" name="options1[]">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@section('js')
+<script>
+    $('.addItemOptions').click(function() {
+        $('.options').append(' <div class="col-md-3 itemOptions"><input class="form-control my-3 " type="text" name="options1[]" ></div>');
+    });
+    $('.removeItemOptions').click(function() {
+        $('.itemOptions').last().remove();
+    });
+    $options = implode(',', $request - > options1);
+    $options = explode(',', $string);
+</script>
+@endsection
