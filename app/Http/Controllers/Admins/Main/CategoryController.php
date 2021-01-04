@@ -14,7 +14,7 @@ class CategoryController extends Controller
 
     public function create()
     {
-        return view('Admins.Category.create');
+        return view('Admins.Subject.Category.create');
     }
     public function store(Request $request)
     {
@@ -41,7 +41,7 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
         if ($category) {
-            return view('Admins.Category.edit', compact('category'));
+            return view('Admins.Subject.Category.edit', compact('category'));
         } else {
             FlashMessage::set('error', 'درخواست کامل نبود');
             return back();
@@ -80,12 +80,12 @@ class CategoryController extends Controller
         if ($request->id) {
              $category = Category::find($request->id);
              if ($category) {
-             
+
              }else{
                 FlashMessage::set('error', 'درخواست کامل نبود');
                 return back();
              }
-          
+
         } else {
             FlashMessage::set('error', 'درخواست کامل نبود');
             return back();
