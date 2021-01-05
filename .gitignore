@@ -3,6 +3,11 @@
 /public/uploads
 /public/vendor
 /public/storage
+/public/public
+/public/.htaccess
+/public/favicon.ico
+/public/index.php
+/public/robots.txt
 /storage/*.key
 /vendor
 .phpunit.result.cache
@@ -15,7 +20,6 @@ yarn-error.log
 /config
 /Documentaiton
 /documentation
-/public
 /storage
 /tests
 .editorconfig
