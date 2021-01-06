@@ -1,8 +1,17 @@
 /node_modules
 /public/hot
+/public/assets/avatar.jpg
+/public/assets/Web/fonts/
+/public/assets/Web/lib/
+/public/assets/Web/images
 /public/uploads
 /public/vendor
 /public/storage
+/public/public
+/public/.htaccess
+/public/favicon.ico
+/public/index.php
+/public/robots.txt
 /storage/*.key
 /vendor
 .phpunit.result.cache
@@ -15,9 +24,10 @@ yarn-error.log
 /config
 /Documentaiton
 /documentation
-/public
 /storage
 /tests
 .editorconfig
 .env.example
+.idea
+.env
 

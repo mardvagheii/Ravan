@@ -152,8 +152,12 @@ Route::namespace('Admins')->prefix('Admins')->name('Admins.')->group(function ()
 
 
         // Questions
-        Route::get('/DeleteQuestion/{id}', 'Main\QuestionController@destroy')->name('DeleteQuestion');
-        Route::post('/AddQuestion', 'Main\QuestionController@Add')->name('AddQuestion');
+        Route::post('/AddQuestionHow', 'Main\QuestionController@AddHow')->name('AddQuestionHow');
+        Route::get('/DeleteQuestionHow/{id}', 'Main\QuestionController@destroyHow')->name('DeleteQuestionHow');
+        Route::post('/AddQuestionWhy', 'Main\QuestionController@AddWhy')->name('AddQuestionWhy');
+        Route::get('/DeleteQuestionWhy/{id}', 'Main\QuestionController@destroyWhy')->name('DeleteQuestionWhy');
+        Route::post('/AddImageWhy', 'Main\QuestionController@AddImageWhy')->name('AddImageWhy');
+        Route::get('/DeleteImageWhy/{id}', 'Main\QuestionController@destroyImageWhy')->name('DeleteImageWhy');
         Route::get('Questions', 'Main\MainController@Questions')->name('Questions');
 
 
