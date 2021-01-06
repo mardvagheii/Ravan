@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
+
+
+
+
+
+
+
+
+
 class ProfileController extends Controller
 {
     public function Update(UpdateRequest $request)
